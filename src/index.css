@@ -14,6 +14,7 @@ code {
 
 .container {
   display: flex;
+  position:relative;
   flex-direction: column;
   background: #c7375f;
   color: #f0f4f7;
@@ -62,9 +63,48 @@ code {
 }
 
 .animate__animated.animate__fadeOutRightBig {
-  --animate-duration: 3s;
+  --animate-duration: 5.5s;
 }
 
 .animate__animated.animate__wobble {
   --animate-duration: 2s;
 }
+
+
+@media screen and (max-width: 800px) {
+  html, body {
+    margin: 0;
+    height: 100%;
+}
+  .body {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+  }
+  .container {max-width: 260px; height:85%; margin: 10px auto;   border-radius: 10px;}
+  }
+
+  .jingleBells-container {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+  }
+ 
+  .reindeer-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  
+  .countdownDisplay{
+    font-size: 50px;
+    margin: 0;
+  }
+

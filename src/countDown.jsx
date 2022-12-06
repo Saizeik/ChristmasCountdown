@@ -49,14 +49,15 @@ export default function renderCountdown() {
       
       <div className=" animate__animated animate__fadeOutRightBig reindeer-container">
      
-      <img className ="jingleBells-image" src={santa} alt="santa's sleigh" />
+      <img className ="reindeer-image" src={santa} alt="santa's sleigh" />
       <img className ="reindeer-image" src={reindeer} alt="reindeer" />
       <img className ="reindeer-image" src={reindeer} alt="reindeer" />
       <img className ="reindeer-image" src={reindeer} alt="reindeer" />
-      </div>
-      <div className="  animate__animated animate__wobble">
-      <h1> Christmas Countdown 🎄</h1>
-      </div>
+      <img className ="reindeer-image" src={reindeer} alt="reindeer" />
+    </div>
+      
+      <h1> Christmas Countdown </h1> <h1 className= "animate__animated animate__rubberBand" >🎄</h1>
+      
         <div className="countdownDisplay">
           {countdownDisplay}-
         </div>

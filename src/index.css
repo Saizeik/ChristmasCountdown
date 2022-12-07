@@ -91,7 +91,7 @@ code {
 }
 
 .animate__animated.animate__fadeOutRightBig {
-  --animate-duration: 5.5s;
+  --animate-duration: 15s;
 }
 
 .animate__animated.animate__wobble {

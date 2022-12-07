@@ -5,6 +5,9 @@ import christmasTree from "./christmas-tree.png";
 
 
 export default function getContent() {
+
+ 
+
   return (
   
   <div className="content-container">
@@ -37,4 +40,5 @@ export default function getContent() {
   
       </div>
   )
+  
 }

@@ -14,7 +14,7 @@ code {
 
 .container {
   display: flex;
-  position:relative;
+  position: relative;
   flex-direction: column;
   background: #c7375f;
   color: #f0f4f7;
@@ -27,6 +27,14 @@ code {
 .countdownDisplay {
   font-size: 100px;
   margin: 0;
+}
+
+.christmas-tree {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .jingleBells-image {
   display: flex;
@@ -62,6 +70,14 @@ code {
   margin: 0 auto;
 }
 
+.christmas-tree-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 870px;
+  max-height: 200px;
+}
+
 .animate__animated.animate__fadeOutRightBig {
   --animate-duration: 5.5s;
 }
@@ -70,19 +86,31 @@ code {
   --animate-duration: 2s;
 }
 
-
 @media screen and (max-width: 800px) {
-  html, body {
+  html,
+  body {
     margin: 0;
     height: 100%;
-}
+  }
   .body {
     display: flex;
     align-items: center;
-    overflow-x: hidden; 
-    overflow-y: hidden; 
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-  .container {max-width: 260px; height:85%; margin: 10px auto;   border-radius: 10px;}
+  .container {
+    max-width: 260px;
+    height: 85%;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+  .christmas-tree {
+    margin: 0px 80px 0px 80px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 
   .jingleBells-container {
@@ -93,7 +121,7 @@ code {
     height: 100px;
     margin: 0 auto;
   }
- 
+
   .reindeer-container {
     display: flex;
     justify-content: space-evenly;
@@ -102,9 +130,9 @@ code {
     height: 50px;
     margin: 0 auto;
   }
-  
-  .countdownDisplay{
+
+  .countdownDisplay {
     font-size: 50px;
     margin: 0;
   }
-
+}

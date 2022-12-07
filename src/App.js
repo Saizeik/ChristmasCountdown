@@ -51,7 +51,7 @@ function App() {
           <main className="main">
             {getContent()}
             <p id="christmasCountdown"></p>
-            <p className="countdownText">Days 'til Christmas!</p>
+            <p className="countdownText">'til Christmas!</p>
           </main>
         </div>
       </header>

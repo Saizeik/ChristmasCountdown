@@ -33,6 +33,12 @@ code {
 
 #christmasCountdown {
   font-size: 75px;
+  font-weight:bold;
+}
+
+.countdownText{
+  font-size: 25px;
+  font-weight:bold;
 }
 
 .christmas-tree {

@@ -33,12 +33,12 @@ code {
 
 #christmasCountdown {
   font-size: 75px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.countdownText{
+.countdownText {
   font-size: 50px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .christmas-tree {
@@ -105,7 +105,7 @@ code {
     height: 100%;
     overflow-x: hidden;
   }
- 
+
   .container {
     max-width: 260px;
     height: 85%;
@@ -139,8 +139,8 @@ code {
     margin: 0 auto;
   }
 
-  .countdownDisplay {
-    font-size: 50px;
+  .countdownText {
+    font-size: 25px;
     margin: 0;
   }
 

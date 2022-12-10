@@ -1,6 +1,7 @@
 import "./App.css";
 
 import getContent from "../src/content.jsx";
+import SantaReindeer from "./santa.jsx";
 
 const countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
 
@@ -41,15 +42,18 @@ function App() {
     document.getElementById("christmasCountdown").innerHTML = countdownDisplay;
   }, 1000);
 
-  setInterval(function getContent() {
+  setInterval(function SantaReindeer() {
     window.location.reload();
-  }, 60000);
+  }, 30000);
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="container">
           <main className="main">
             {getContent()}
+            {SantaReindeer()}
+            <p id="santa"></p>
             <p id="christmasCountdown"></p>
             <p className="countdownText">'til Christmas!</p>
           </main>

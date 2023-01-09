@@ -112,28 +112,49 @@ function YouTubeJukebox() {
 function App() {
   const countdown = setInterval(function () {
     const christmas = 25;
+ // get today's date (you only need the day)
+
+
+
 
     const now = new Date();
-    const year = now.getFullYear();
+   
+   
+   const year = now.getFullYear();
+   function daysUntilChristmas() {
+    // Get the current date
+    const currentDate = new Date();
+  
+    // Set the target date to December 25th of the current year
+    const targetDate = new Date(currentDate.getFullYear(), 11, 25);
+  
+    // Calculate the difference in milliseconds
+    const differenceInMilliseconds = targetDate - currentDate;
+  
+    // Convert the difference to days
+    const differenceInDays = differenceInMilliseconds / 86400000;
+  
+    // Round the result down to the nearest whole number
+    return Math.floor(differenceInDays);
+  }
+  
     const td = new Date("December 25," + year + " 00:01:00");
     const distance = td.getTime() - now.getTime();
+    console.log("td", td)
 
-    // get today's date (you only need the day)
-    const d = new Date();
-
-    const today = d.getDate();
+    
 
     let hours = Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
-    let days = Math.floor(hours / 24);
+    let days = daysUntilChristmas();
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
     hours %= 24; // % Modulus; hours = hours/24; returns the remainder after dividing the specific values. the remainder is the modulus
     minutes %= 60;
     seconds %= 60;
     const countdownDisplay =
-      days +
+    days +
       " " +
       "days" +
       " " +
